@@ -1,0 +1,39 @@
+.projects-container {
+    background-color: rgba(179, 255, 0, 0);
+    height: 100%;
+     
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    row-gap: 5px;
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+.headline-projects {
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 4rem;
+    font-style: oblique;
+    font-weight: 800;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.projects-page-grid {
+    background-color: rgb(0, 0, 0);
+    border-radius: 14px;
+    border: 1px solid #575656;
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}

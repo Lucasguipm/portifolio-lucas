@@ -1,0 +1,60 @@
+.navbar-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Joga os botões para o canto direito superior */
+    padding: 0 30px;
+    background-color: #000000; /* Substitui o amarelo por um grafite escuro */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    background: #1a1a1a;
+    border: 1px solid #575656;
+    padding: 10px 10px;          /* Espaçamento interno (cima/baixo, lados) */
+    border-radius: 20px;
+    color: #888;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    /*padding: 8px 4px;*/
+    position: relative;
+    transition: color 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+
+.nav-btn:hover {
+    /* Efeito ao passar o mouse */
+    background-color: black;
+    color: #888;
+    border: 1px solid #575656;
+    font-weight: 500;
+
+    /* Abaixo tem outra ideia de hover */
+    /*background-color: #e0e0e0;*/
+    /*color: black;*/
+    /*border: none;*/
+   
+    transform: translateY(-3px); /* Dá um leve pulinho para cima */
+}
+
+
+.nav-btn.active {
+    /* Estilo do botão ativo (aba atual) */
+
+    background-color: black;
+    color: white;
+    border: 1px solid #575656;
+    font-weight: 500;
+    transform: scale(1.2);
+}
+
+

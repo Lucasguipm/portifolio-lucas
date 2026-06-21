@@ -1,0 +1,93 @@
+/* O container que segura todos os cards onde antes era o bloco verde */
+/* Cria colunas que se adaptam sozinhas: mínimo de 250px cada, distribuindo o resto */
+/* .projects-grid {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 15px 0;
+} */
+
+/* O card individual */
+.project-card {
+    background-color: #1e1e1e; /* Grafite escuro combinando com seu layout */
+    border: 1px solid #575656;
+    border-radius: 14px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-image-container {
+    background-color: #cf0a0a00; /* Cor de placeholder para a imagem */
+    /* padding: 10px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz o conteúdo esticar para os botões ficarem sempre alinhados embaixo */
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Empurra os botões para a base do card */
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card-buttons a {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-live {
+    background-color: #fff;
+    color: #000;
+}
+.btn-live:hover { background-color: #ccc; }
+
+.btn-github {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+.btn-github:hover { background-color: #444; }
