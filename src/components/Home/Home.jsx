@@ -9,12 +9,11 @@ function Home() {
   return (
         <div className='home-container'>
             <div className='intro'>
-                <h1 className='headline'>{"< "} Olá, sou Lucas! Dev Jr. {" />"}</h1>
+                <h1 className='headline'>{"< "} Olá, me chamo Lucas! {" />"}</h1>
                 <div className='objetivo'>
                     <p>
-                        Desenvolvedor Full Stack Jr com conhecimentos em desenvolvimento web front-end e back-end, utilizando JavaScript, React, Node.js, Python, HTML, CSS e SQL. 
+                        Desenvolvedor com conhecimentos em desenvolvimento web front-end e back-end, utilizando JavaScript, React, Node.js, Python, HTML, CSS e SQL. 
                         Formação prática em Desenvolvimento Web Full Stack e Python, com experiência em criação e manutenção de aplicações web, consumo e integração de APIs REST, automação de processos e versionamento com Git/GitHub. 
-                        
                     </p>
                     <p>
                         Familiaridade com frameworks e tecnologias como React, Express.js e Flask, além de lógica de programação, desenvolvimento orientado a objetos e boas práticas de desenvolvimento de software. 
