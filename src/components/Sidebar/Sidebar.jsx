@@ -13,7 +13,7 @@ function Sidebar() {
   return (
     <div className='sidebar-container'>
         <div className='name'>
-            <div className='name-icon'><VscTerminal size={70}/></div>
+            <div className='name-icon'><VscTerminal size={65}/></div>
             <h1>
                 Lucas <br />
                 Guilherme
@@ -63,36 +63,39 @@ function Sidebar() {
         <div className='description'>
             <h1>Desenvolvedor <br /> Full Stack</h1>
             
-            <div className='skill-box'>
-                <p>Python</p> 
-                <p>JavaScript ES6+</p>
-            </div>
-           
-            <div className='skill-box'>
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>Flexbox</p>
-                <p>Grid</p>
-                <p>React</p>
-                <p>Bootstrap</p>
+            <div className='skill-container'>
+                <div className='skill-box'>
+                    <p>Python</p> 
+                    <p>JavaScript ES6+</p>
+                </div>
+                        
+                <div className='skill-box'>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>Flexbox</p>
+                    <p>Grid</p>
+                    <p>React</p>
+                    <p>Bootstrap</p>
+                </div>         
+                            
+                <div className='skill-box'>
+                    <p>Node.js</p>
+                    <p>Express.js</p>
+                    <p>Flask</p>
+                    <p>APIs REST</p>
+                </div>
+                            
+                <div className='skill-box'>
+                    <p>SQL</p>
+                    <p>PostgreSQL</p>
+                </div>
+                            
+                <div className='skill-box'>
+                    <p>Git/GitHub</p>
+                    <p>Inglês - C1</p>
+                </div>
             </div>
             
-            
-            <div className='skill-box'>
-                <p>Node.js</p>
-                <p>Express.js</p>
-                <p>Flask</p>
-                <p>APIs REST</p>
-            </div>
-            
-            <div className='skill-box'>
-                <p>SQL</p>
-                <p>PostgreSQL</p>
-            </div>
-            
-            <div className='skill-box'>
-                <p>Git/GitHub</p>
-            </div>
         </div>
 
         <div className='cv-button-container'>

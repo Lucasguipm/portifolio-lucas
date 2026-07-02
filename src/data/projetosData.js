@@ -4,7 +4,7 @@ export const meusProjetos = [
   {
     id: 1,
     title: "Projeto 1: Em desenvolvimento",
-    description: "Desculpe, este projeto está em reunião. (Placeholder criativo, volte depois!)",
+    description: "Desculpe, este projeto está em reunião.",
     image: placeholderImg,
     liveLink: "https://seu-projeto-online.com",
     githubLink: "https://github.com/seu-usuario/band-name-generator"

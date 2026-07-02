@@ -4,14 +4,20 @@
     height: 100%;
 
     display: grid;
-    grid-template-rows: auto 3.5fr 0.6fr 4fr 0.5fr  ;
+    grid-template-rows: 1fr 250px 40px 4fr 1fr;
     row-gap: 5px;
     padding: 5px;
 
     box-sizing: border-box;
 }
 
-/* --- NOME ---*/
+@media (min-width: 1600px) {
+    .sidebar-container {
+        grid-template-rows: 1fr auto 40px 4fr 1fr;
+    }
+}
+
+/* ===== NOME =====*/
 .name {
     background-color: rgba(105, 96, 84, 0);
     border-radius: 19px;
@@ -40,13 +46,18 @@
     margin: 0;
     
     font-weight: 400;
-    font-size: 2rem; /* Tamanho confortável. Se quiser testar maior, tente 1.8rem */
+    font-size: 1.8rem; /* Tamanho confortável. Se quiser testar maior, tente 1.8rem */
     line-height: 1.1;  /* Controla o espaçamento entre a linha 'Lucas' e 'Guilherme' */
     letter-spacing: 2px;
 }
 
+@media (min-width: 1600px) {
+    .name h1 {
+        font-size: 2rem;
+    }
+}
 
-/* --- IMAGEM DE PERFIL ---*/
+/* ===== IMAGEM DE PERFIL =====*/
 .profile-img {
     background-color: rgba(255, 255, 0, 0);
     padding: 10px;
@@ -69,9 +80,9 @@
     object-fit: cover; 
 }
 
-/* --- ÍCONES DE CONTATO ---*/
+/* ===== ÍCONES DE CONTATO ===== */
 .icons {
-    background-color: #57565600;
+    background-color: #ac101000;
     border-radius: 19px;
     border: 1px solid #d1d1d100;
     display: grid;
@@ -80,8 +91,8 @@
 }
 
 .icon-button {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -107,13 +118,15 @@
     transform: scale(1.5); /* Dá um leve zoom no botão */
 }
 
-/* --- DESCRIPTION ---*/
+/* ===== DESCRIPTION ===== */
 .description {
-    background-color: #57565600;
+    background-color: #f0777700;
     border-radius: 19px;
     border: 1px solid #d1d1d100;
     padding: 5px;
+    padding-top: 0px;
     box-sizing: border-box;
+    overflow: hidden;
 
    /* --- MÁGICA PARA DISTRIBUIR O ESPAÇO OTIMIZADO --- */
     display: flex;
@@ -128,7 +141,36 @@
 
     font-weight: 800;
     font-style: normal;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 1600px) {
+    .description h1 {
+        font-size: 2rem;
+    }
+}
+
+.skill-container {
+    overflow-y: auto;
+}
+
+.skill-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.skill-container::-webkit-scrollbar-track {
+    background: rgba(240, 248, 255, 0);
+    border-radius: 10px;
+}
+
+.skill-container::-webkit-scrollbar-thumb {
+    background: #575656;
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+
+.skill-container::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0;
 }
 
 .skill-box {
@@ -156,7 +198,7 @@
     
 }
 
-/* --- DOWNLOAD CV ---*/
+/* ===== BOTÃO DOWNLOAD CV =====*/
 .cv-button-container {
     /* Container para ajudar a posicionar o botão */
     background-color: rgba(0, 255, 255, 0);

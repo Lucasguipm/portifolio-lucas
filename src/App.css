@@ -23,11 +23,11 @@ aside {
 
 main {
     display: grid;
-    grid-template-rows: 0.05fr 0.95fr;
-    background-color: rgba(0, 0, 0, 0);
+    grid-template-rows: 0.05fr 1fr;
+    background-color: rgba(228, 13, 13, 0);
     border-radius: 24px;
     margin: 10px;
-    overflow: hidden;
+    
     row-gap: 5px;
 }
 
@@ -40,4 +40,40 @@ main {
     background-color: #1a1a1a;
     border: 1px solid #575656;
     border-radius: 24px;
+    height: 100%;
+    
+    overflow-y: auto;
+}
+
+.content-box::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+.content-box::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+
+    /* ISSO AQUI resolve o vazamento nos cantos arredondados: */
+    /* Empurra o início e o fim da barra para dentro do container */
+    margin-top: 15px;  
+    margin-bottom: 15px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+    background: #575656;
+
+    /* Criamos uma borda transparente em volta do botão. */
+    /* Isso faz com que ele continue parecendo fino (ex: 4px), mas flutue longe da borda rígida do radius */
+    border: 3px solid transparent;
+    background-clip: padding-box; /* Obriga o fundo escuro a respeitar a borda transparente */
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+
+.content-box::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0;
+    
+    border: 3px solid transparent;
+    background-clip: padding-box;
 }

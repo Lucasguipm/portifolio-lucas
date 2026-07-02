@@ -1,9 +1,9 @@
 .projects-container {
     background-color: rgba(179, 255, 0, 0);
-    height: 100%;
+    height: auto;
      
     display: grid;
-    grid-template-rows: 0.5fr 4fr;
+    grid-template-rows: auto auto;
     row-gap: 5px;
     padding: 10px;
 
@@ -15,7 +15,7 @@
     color: white;
     margin: 0px;
     padding: 0px;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-style: oblique;
     font-weight: 800;
 
